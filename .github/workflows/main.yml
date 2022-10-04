@@ -15,11 +15,10 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    
+
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -27,9 +26,25 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 17.x
-     
+
       - name: Install UI
         working-directory: ./my-resume-ui
         run: |
           echo Install UI.
           npm install --legacy-peer-deps
+          npm run build
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+      - uses: aws-actions/setup-sam@v1
+      - uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+      # sam build
+      - name: Build IAC
+        working-directory: ./my-resume-ui
+        run: aws sync build s3://www.resume.adolha.com

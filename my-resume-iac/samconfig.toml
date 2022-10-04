@@ -1,0 +1,19 @@
+version = 0.1
+[default]
+[default.deploy]
+[default.deploy.parameters]
+stack_name = "my-resume"
+s3_bucket = "aws-sam-cli-managed-my-resume-adolha"
+s3_prefix = "iac/public"
+region = "eu-central-1"
+confirm_changeset = true
+capabilities = "CAPABILITY_IAM"
+disable_rollback = false
+parameter_overrides = [
+    "Env=\"public\"",
+    "App=\"my-resume\"",
+    "AcmCertificateArn=\"arn:aws:acm:us-east-1:522613221199:certificate/cfc7e709-b01c-4a27-852c-ac5154ab6a58\"",
+    "RootDomainName=\"adolha.com\"",
+    "UIDomainName=\"www.resume\"",
+    "UIBucketName=\"www.resume.adolha.com\""
+    ]
