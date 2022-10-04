@@ -32,4 +32,4 @@ jobs:
         working-directory: ./my-resume-ui
         run: |
           echo Install UI.
-          npm install
+          npm install --legacy-peer-deps
