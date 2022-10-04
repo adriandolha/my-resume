@@ -28,6 +28,7 @@ jobs:
         run: |
           echo Install UI.
           npm install --legacy-peer-deps
+          ls node_modules
           npm run build
         env:
           CI: false
