@@ -19,6 +19,10 @@ const useStyles = makeStyles((theme) =>
         },
         resumeBlock: {
             paddingTop: theme.spacing(5),
+            [theme.breakpoints.down('md')]: {
+                fontSize: '22px',
+                paddingTop: theme.spacing(1),
+              },
             paddingRight: theme.spacing(10),
             paddingBottom: theme.spacing(3),
             // paddingLeft: theme.spacing(10),
