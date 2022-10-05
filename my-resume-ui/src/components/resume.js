@@ -1,7 +1,6 @@
 import { Divider, Typography } from '@material-ui/core';
 import resumeTheme from '../theme';
-import Grid from '@material-ui/core/grid';
-import Item from '@material-ui/core/grid';
+import Grid from '@material-ui/core/Grid';
 import { Paper, Box } from "@material-ui/core"
 import { useTheme, createStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
 import PersonalDetails from './personal-details';

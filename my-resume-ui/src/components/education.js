@@ -1,6 +1,5 @@
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
-import { List, ListItem } from '@material-ui/core';
 import resumeTheme from '../theme';
 import { useTheme, createStyles, makeStyles } from '@material-ui/core/styles';
 import MarkedComponent from './marked-component';

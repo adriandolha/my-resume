@@ -1,5 +1,6 @@
 import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
+import Box from '@material-ui/core/Box';
 import resumeTheme from '../theme';
 import { useTheme, createStyles, makeStyles } from '@material-ui/core/styles';
 import WorkExperience from './work-experience';
@@ -27,6 +28,11 @@ const useStyles = makeStyles((theme) =>
         work: {
             marginTop: '10px'
         },
+        skills:{
+            [theme.breakpoints.down('md')]: {
+                marginLeft: '60px'
+              }
+        },
         workDate: {
             fontStyle: 'italic',
             float: 'left',
@@ -51,7 +57,7 @@ function ResumeBody({ resume, onResize }) {
 
     return (
         <Grid item container spacing={4} columns={{ sm: 3, md: 3, lg: 3 }} className={classes.work}>
-            <Grid item xs={6} md={6} lg={6} spacing={2} container direction='column'>
+            <Grid item xs={12} md={6} lg={6} spacing={2} container direction='column'>
                 <Grid item>
                     <MarkedComponent component={<Typography variant="h4" className={classes.sectionTitle}>
                         {resume.workExperienceTitle}
@@ -74,8 +80,8 @@ function ResumeBody({ resume, onResize }) {
                     return <Fragment key={`edu-${i}`}><Grid item><Education data={data} /></Grid></Fragment>
                 })}
             </Grid>
-            <Grid item xs={6} md={6} lg={6}>
-                <Skills resume={resume} />
+            <Grid item container xs={12} md={6} lg={6} className={classes.skills}>
+                <Box sx={{padding: 2}}><Skills resume={resume} /></Box>
             </Grid>
         </Grid>
     );

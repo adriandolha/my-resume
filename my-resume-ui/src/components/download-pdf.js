@@ -1,5 +1,5 @@
 import { Button } from '@material-ui/core';
-import Grid from '@material-ui/core/grid';
+import Grid from '@material-ui/core/Grid';
 import resumeTheme from '../theme';
 import { useTheme, createStyles, makeStyles } from '@material-ui/core/styles';
 import JsPDF from 'jspdf';

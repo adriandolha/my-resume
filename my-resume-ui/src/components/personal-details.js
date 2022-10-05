@@ -93,7 +93,7 @@ function PersonalDetails({ resume, onResize }) {
 
     return (
         <Grid item container spacing={3} columns={{ sm: 3, md: 3, lg: 3 }} className={classes.personalDetails}>
-            <Grid item container xs={5} md={5} lg={5} direction='column' >
+            <Grid item container xs={12} md={5} lg={5} direction='column' >
                 <Item>
                     <MarkedComponent component={<Header></Header>} markerColor={theme.palette.primary.main} />
                 </Item>
@@ -101,10 +101,10 @@ function PersonalDetails({ resume, onResize }) {
                     <MarkedComponent component={<Description></Description>}  />
                 </Item>
             </Grid>
-            <Grid item container xs={2} md={2} lg={2} justifyContent='center'>
+            <Grid item container xs={12} md={2} lg={2} justifyContent='center'>
                 <Avatar alt="" src={resume.personalDetails.picture} className={classes.myPicture} />
             </Grid>
-            <Grid item xs={5} md={5} lg={5} container direction='column' spacing={1}>
+            <Grid item xs={12} md={5} lg={5} container direction='column' spacing={1}>
                 <Grid item container direction='row' justifyContent='flex-end' alignItems='center' columns={{ sm: 1, md: 2, lg: 2 }}>
                     <Typography variant='h6'>{resume.personalDetails.contact.email}</Typography>
                     <EmailIcon className={classes.myIcon} />

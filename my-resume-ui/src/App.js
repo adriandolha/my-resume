@@ -1,7 +1,7 @@
 import './App.css';
 import './index.css';
 import Container from '@material-ui/core/Container';
-import Grid from '@material-ui/core/grid';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import resumeTheme from './theme';
 import { useTheme, createStyles, makeStyles, ThemeProvider } from '@material-ui/core/styles';
