@@ -41,4 +41,8 @@ jobs:
           aws-region: eu-central-1
       - name: Deploy
         working-directory: ./my-resume-ui
-        run: aws s3 sync build s3://www.resume.adolha.com
+        env:
+          cloudfront_distribution_id: E2U81VLULL0JTP
+        run: |
+          aws s3 sync build s3://www.resume.adolha.com
+          aws cloudfront create-invalidation --distribution-id $cloudfront_distribution_id --paths  '/*'
