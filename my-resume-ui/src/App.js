@@ -18,6 +18,9 @@ const useStyles = makeStyles((theme) =>
       borderRadius: '10px',
       textTransform: 'uppercase',
       fontSize: '50px',
+      [theme.breakpoints.down('md')]: {
+        fontSize: '18px',
+      },
       color: 'white'
     },
     copyright: {

@@ -13,7 +13,10 @@ const useStyles = makeStyles((theme) =>
             float: 'left',
             textTransform: 'uppercase',
             marginTop: theme.spacing(2),
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            [theme.breakpoints.down('md')]: {
+                fontSize: '22px'
+              }
         },
         skill: {
             borderRadius: '10px',

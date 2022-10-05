@@ -24,6 +24,9 @@ const useStyles = makeStyles((theme) =>
             textTransform: 'uppercase',
             float: 'left',
             marginTop: theme.spacing(2),
+            [theme.breakpoints.down('md')]: {
+                fontSize: '22px'
+              }
         },
         work: {
             marginTop: '10px'
