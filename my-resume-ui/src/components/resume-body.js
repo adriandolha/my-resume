@@ -28,9 +28,17 @@ const useStyles = makeStyles((theme) =>
         work: {
             marginTop: '10px'
         },
-        skills:{
+        workExperience: {
+            order: 1,
             [theme.breakpoints.down('md')]: {
-                marginLeft: '60px'
+                order: 2
+              }
+        },
+        skills:{
+            order:2,
+            [theme.breakpoints.down('md')]: {
+                marginLeft: '60px',
+                order:1
               }
         },
         workDate: {
@@ -57,7 +65,7 @@ function ResumeBody({ resume, onResize }) {
 
     return (
         <Grid item container spacing={4} columns={{ sm: 3, md: 3, lg: 3 }} className={classes.work}>
-            <Grid item xs={12} md={6} lg={6} spacing={2} container direction='column'>
+            <Grid item xs={12} md={6} lg={6} spacing={2} container direction='column' className={classes.workExperience}>
                 <Grid item>
                     <MarkedComponent component={<Typography variant="h4" className={classes.sectionTitle}>
                         {resume.workExperienceTitle}
@@ -80,8 +88,8 @@ function ResumeBody({ resume, onResize }) {
                     return <Fragment key={`edu-${i}`}><Grid item><Education data={data} /></Grid></Fragment>
                 })}
             </Grid>
-            <Grid item container xs={12} md={6} lg={6} className={classes.skills}>
-                <Box sx={{padding: 2}}><Skills resume={resume} /></Box>
+            <Grid item container xs={12} md={6} lg={6} className={classes.skills} >
+                <Skills resume={resume} />
             </Grid>
         </Grid>
     );
