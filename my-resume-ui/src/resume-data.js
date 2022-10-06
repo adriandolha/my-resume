@@ -36,8 +36,9 @@ const resume = {
         cloud: {
             name: 'Cloud',
             level: 5, items: [
-                ['AWS'],
-                ['Azure']
+                ['AWS', 'Lambda', 'API Gateway', 'DynamoDB', 'RDS', 'Cognito', 'S3', 'SNS', 'SQS', 'CloudFront', 'Route53',
+                'ECS', 'EKS', 'Parameter Store', 'Secrets Manager'],
+                ['Azure',  'AKS', 'Azure Functions', 'Azure API Management', 'Azure Event Hub', 'Azure Blob Storage', 'Azure Key Vault']
             ]
         },
         devops: {
@@ -46,7 +47,13 @@ const resume = {
                 ['Jenkins',
                     'Terraform',
                     'Tekton',
-                    'ArgoCD']
+                    'ArgoCD',
+                    'AWS SAM',
+                    'AWS CodePipeline',
+                    'AWS CodeBuild',
+                    'Kubernetes',
+                    'Docker',
+                    'Github Actions']
             ]
         },
         frontend: {
@@ -97,11 +104,24 @@ const resume = {
     workExperienceTitle: 'Work Experience',
     tasksTitle: 'Achievements/Tasks',
     workExperiences: [
+    {
+            jobTitle: 'Serverless Python Developer',
+            company: 'Freelancing',
+            from: '03/2022',
+            to: 'Present',
+            tasks: [
+                'After 13 years, I took a small break from full time employee, engaging on the freelancing journey.',
+                'Visited several countries.',
+                'Worked on personal projects. Please check personal projects section for more details.',
+                'Part time consultant and serverless developer.'
+            ],
+            techStack: ['Python', 'AWS', 'Serverless', 'React']
+        },
         {
             jobTitle: 'Head of Development',
             company: 'Endava',
             from: '01/2019',
-            to: '04/2021',
+            to: '03/2022',
             tasks: [
                 'Coordinated Development Discipline with 10 Discipline Leads and over 400 developers.',
                 'Built 6 technical communities for Java, .NET, Android, iOS, Frontend, Python',
@@ -117,7 +137,7 @@ const resume = {
             jobTitle: 'Senior Architect',
             company: 'Endava',
             from: '05/2018',
-            to: '05/2019',
+            to: '06/2019',
             tasks: [
                 'Coordinated the development effort for the team.',
                 'Created on-boarding procedure for new team members.',
@@ -197,18 +217,67 @@ const resume = {
     ],
     personalProjectsTitle: 'Personal Projects',
     personalProjects: [{
+        title: 'Billy',
+        github: { link: 'https://github.com/adriandolha/billy', placeholder: 'Github Repo' },
+        from: '04/2022',
+        to: 'Present',
+        description: '',
+        tasks: ['Created an application for expenses and bills analytics, which collects, processes and analyzes'+
+            'bank statements, providing a general view on your expenses. It generates reports that show how much'+
+            'you spend on food, travel, etc.',
+            'Extracted data from pdf bank statements using tabula and pandas.',
+            'Implemented low cost search engine based on pandas, caching data stored in S3.',
+            'Created end to end CI/CD pipeline using CodePipeline and CodeBuild.',
+            'Integrated Cognito for user authentication and authorization.',
+            'Implemented event driven architecture with DynamoDB streams, SNS topics and SQS queues.',
+            'Implemented serverless architecture using Lambdas and SAM.',
+            'Implemented DynamoDB single table design.',
+            'Deployed React frontend on S3, CloudFront and Route53'
+        ],
+        techStack: ['Serverless','Python', 'AWS', 'Lambda', 'SAM', 'SNS', 'SQS', 'S3', 'DynamoDB', 'CloudFront', 'Cognito',
+         'API Gateway', 'Route53', 'CodePipeline', 'CodeBuild', 'Secrets Manager', 'Parameter Store', 'pandas', 'tabula',
+        'React', 'Material UI']
+    },
+    {
+        title: 'Hodor',
+        github: { link: 'https://github.com/adriandolha/hodor', placeholder: 'Github Repo' },
+        from: '04/2022',
+        to: 'Present',
+        description: '',
+        tasks: ['Created an authentication and authorization service based on AuthLib to generate JWTs.',
+            'Integrated Google authentication.'
+        ],
+        techStack: ['Python','OAuthLib', 'JWT', 'Postgres','Kubernetes', 'Docker']
+    },
+    {
+        title: 'My Resume',
+        github: { link: 'https://github.com/adriandolha/my-resume', placeholder: 'Github Repo' },
+        from: '04/2022',
+        to: 'Present',
+        description: '',
+        tasks: ['Created a simple React app to expose my resume.',
+            'Deployed React frontend on S3, CloudFront and Route53.'
+        ],
+        techStack: ['React','Material UI', 'AWS', 'S3', 'CloudFront', 'SAM', 'Route53', 'Lambda', 'Github Actions']
+    },
+    {
         title: 'Lorem Ipsum',
         github: { link: 'https://github.com/adriandolha/cloud-demo/tree/master/lorem-ipsum', placeholder: 'Github Repo' },
         from: '10/2009',
         to: 'Present',
         description: '',
         tasks: [
-            'Developed and worked on dozens of integrations (Active Driectory , OpenStack , Exchange, Powershell , SCVMM , EC2 , VMWARE , etc.) in a product used to orchestrate datacenter operations. The integrations were developed in Java/C#.',
-            'Migrated build from ANT to Maven.',
-            'Developed key integrations.',
-            'Fixed critical issues for major clients.'
+            'Created an application used as a technical playground to prove architectural concepts.',
+            'Implemented a simple text generator, useful to generate books and get some random content to be used elsewhere.',
+            'Implemented hexagonal architecture in Python.',
+            'Worked using best engineering practices including TDD, CI/CD, OAuth, etc.',
+            'Implemented JWT authentication and authorization.',
+            'Implemented a simple search engine to get stats from generated text. e.g. # of unique numbers.',
+            'Deployed the app on local Kubernetes, AWS ECS and AWS EKS.',
+            'Implemented frontend using React and Bootstrap.'
         ],
-        techStack: ['Python', 'Flask', 'Kubernetes', 'Istio', 'Terraform', 'Tekton', 'ArgoCD']
+        techStack: ['Python', 'Flask', 'Postgres', 'Kubernetes', 'Istio', 'Terraform', 'Tekton', 'ArgoCD', 'AWS', 'EKS', 'ECS',
+        'React', 'Bootstrap', 'Prometheus', 'Grafana', 'ElasticSearch', 'Kibana']
     },
     ]
 }

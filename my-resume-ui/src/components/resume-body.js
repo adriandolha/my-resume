@@ -24,7 +24,7 @@ const useStyles = makeStyles((theme) =>
             textTransform: 'uppercase',
             float: 'left',
             marginTop: theme.spacing(2),
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('xs')]: {
                 fontSize: '22px'
               }
         },
@@ -33,13 +33,13 @@ const useStyles = makeStyles((theme) =>
         },
         workExperience: {
             order: 1,
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('xs')]: {
                 order: 2
               }
         },
         skills:{
             order:2,
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('xs')]: {
                 marginLeft: '60px',
                 order:1
               }
@@ -68,7 +68,7 @@ function ResumeBody({ resume, onResize }) {
 
     return (
         <Grid item container spacing={4} columns={{ sm: 3, md: 3, lg: 3 }} className={classes.work}>
-            <Grid item xs={12} md={6} lg={6} spacing={2} container direction='column' className={classes.workExperience}>
+            <Grid item xs={12} sm={6} md={6} lg={6} spacing={2} container direction='column' className={classes.workExperience}>
                 <Grid item>
                     <MarkedComponent component={<Typography variant="h4" className={classes.sectionTitle}>
                         {resume.workExperienceTitle}
@@ -91,7 +91,7 @@ function ResumeBody({ resume, onResize }) {
                     return <Fragment key={`edu-${i}`}><Grid item><Education data={data} /></Grid></Fragment>
                 })}
             </Grid>
-            <Grid item container xs={12} md={6} lg={6} className={classes.skills} >
+            <Grid item container xs={12} sm={6} md={6} lg={6} className={classes.skills} >
                 <Skills resume={resume} />
             </Grid>
         </Grid>

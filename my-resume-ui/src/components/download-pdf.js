@@ -1,10 +1,11 @@
-import { Button } from '@material-ui/core';
+import { Button, Link } from '@material-ui/core';
 import Grid from '@material-ui/core/Grid';
 import resumeTheme from '../theme';
 import { useTheme, createStyles, makeStyles } from '@material-ui/core/styles';
 import JsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
 import { useReactToPrint } from 'react-to-print';
+import { useSearchParams } from 'react-router-dom';
 
 const useStyles = makeStyles((theme) =>
     createStyles({
@@ -22,6 +23,7 @@ const useStyles = makeStyles((theme) =>
 function DownloadPDF({ resumeRef }) {
     const handlePrint = useReactToPrint({
         content: () => resumeRef.current,
+        // pageStyle: `@page {size: A4,margin: 25mm 25mm 200mm 25mm}`
     });
 
     const theme = resumeTheme(useTheme());
@@ -40,15 +42,26 @@ function DownloadPDF({ resumeRef }) {
         pdf.save('print.pdf');
     };
 
-
+    // const [searchParams, setSearchParams] = useSearchParams();
+    const isExport = window.location.href.includes('export')//searchParams.get("export")
+    console.log(window.location)
     return (
         <Grid item container spacing={1}>
             <Grid item>
-                <Button onClick={handleDownloadPdf} variant='contained' color='primary' className={classes.downloadButton}>Download PDF</Button>
+                {/* <Button variant='contained' color='primary' className={classes.downloadButton}>
+                    <a href={process.env.PUBLIC_URL + "AdrianDolha_2022_10.pdf"} >Download PDF</a>
+                </Button> */}
+                <Button variant='contained' color='primary'
+                    component={Link} href={process.env.PUBLIC_URL + "AdrianDolha_2022_10.pdf"}
+                    className={classes.downloadButton}>
+                    Download PDF
+                </Button>
             </Grid>
-            <Grid item>
-                <Button onClick={handlePrint} variant='contained' className={classes.downloadButton}>Export to pdf</Button>
-            </Grid>
+            {isExport &&
+                <Grid item>
+                    <Button onClick={handlePrint} variant='contained' className={classes.downloadButton}>Export to pdf</Button>
+                </Grid>
+            }
 
         </Grid>
 

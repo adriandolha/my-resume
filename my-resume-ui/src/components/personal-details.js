@@ -22,24 +22,24 @@ const useStyles = makeStyles((theme) =>
             float: 'left',
             fontFamily: 'sans-serif',
             color: theme.palette.primary.dark,
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('xs')]: {
                 fontSize: '25px',
               },
             // fontWeight: 'bold'
         },
         contactDetails: {
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('xs')]: {
                 marginLeft: '15px',
               },
         },
         contactDetail: {
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('xs')]: {
                 fontSize: '14px'
               },
         },
         myTitle: {
             color: theme.palette.success.main,
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('xs')]: {
                 fontSize: '20px',
               },
             // float: 'left'
@@ -67,7 +67,7 @@ const useStyles = makeStyles((theme) =>
         myIcon: {
             padding: '0 10px 0 10px',
             color: theme.palette.primary.main,
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('xs')]: {
                 padding: '0 1px 0 1px'
               },
         }
@@ -112,7 +112,7 @@ function PersonalDetails({ resume, onResize }) {
 
     return (
         <Grid item container spacing={3} columns={{ sm: 3, md: 3, lg: 3 }} className={classes.personalDetails}>
-            <Grid item container xs={12} md={5} lg={5} direction='column' >
+            <Grid item container xs={12} sm={5} md={5} lg={5} direction='column' >
                 <Item>
                     <MarkedComponent component={<Header></Header>} markerColor={theme.palette.primary.main} />
                 </Item>
@@ -120,10 +120,10 @@ function PersonalDetails({ resume, onResize }) {
                     <MarkedComponent component={<Description></Description>}  />
                 </Item>
             </Grid>
-            <Grid item container xs={12} md={2} lg={2} justifyContent='center'>
+            <Grid item container xs={12} sm={2} md={2} lg={2} justifyContent='center'>
                 <Avatar alt="" src={resume.personalDetails.picture} className={classes.myPicture} />
             </Grid>
-            <Grid item xs={12} md={5} lg={5} container direction='column' spacing={1} className={classes.contactDetails}>
+            <Grid item xs={12} sm={5} md={5} lg={5} container direction='column' spacing={1} className={classes.contactDetails}>
                 <Grid item container direction='row' justifyContent='flex-end' alignItems='center' columns={{ sm: 1, md: 2, lg: 2 }}>
                     <Typography variant='h6' className={classes.contactDetail}>{resume.personalDetails.contact.email}</Typography>
                     <EmailIcon className={classes.myIcon} />

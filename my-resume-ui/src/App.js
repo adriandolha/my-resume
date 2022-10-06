@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) =>
       borderRadius: '10px',
       textTransform: 'uppercase',
       fontSize: '50px',
-      [theme.breakpoints.down('md')]: {
+      [theme.breakpoints.down('xs')]: {
         fontSize: '18px',
         margin: '10px 0 1px 0',
         borderRadius: '0',

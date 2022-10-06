@@ -13,4 +13,4 @@ npm start
 ```
 
 ## Usage
-Write your resume in yaml format and let the magic do its thing.
+Write your resume in src/resume-data.js and let the magic do its thing.

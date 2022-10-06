@@ -87,7 +87,7 @@ function GroupSkill({ name, group, classes }) {
                 <Grid item>
                     <Ratings number={group.level} />
                 </Grid>
-                <Grid item container spacing={1} direction='column'>
+                <Grid item container spacing={2} direction='column'>
                     {group.items.map((g, i) => (
                         <Fragment key={i}>
                             <Grid item container spacing={1} direction='row'>

@@ -19,18 +19,17 @@ const useStyles = makeStyles((theme) =>
         },
         resumeBlock: {
             paddingTop: theme.spacing(5),
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('xs')]: {
                 fontSize: '22px',
                 paddingTop: theme.spacing(1),
-              },
+            },
             paddingRight: theme.spacing(10),
             paddingBottom: theme.spacing(3),
-            // paddingLeft: theme.spacing(10),
-            // margin: '10px 20px 100px 20px'
-        }, divider: {
+        },
+        divider: {
             color: theme.palette.primary.main,
             backgroundColor: theme.palette.primary.main,
-            height: '3px', 
+            height: '3px',
             marginLeft: '60px'
 
         }
@@ -103,9 +102,17 @@ const Resume = (props, ref) => {
                     {value.bounds && <Marker name={key} bounds={value.bounds} color={value.color}></Marker>}
                 </Fragment>)
         })
-
+    const marginTop = "10px"
+    const marginRight = "5px"
+    const marginBottom = "10px"
+    const marginLeft = "5px"
+    const getPageMargins = () => {
+        return `@page { margin: ${marginTop} ${marginRight} ${marginBottom} ${marginLeft} !important; }`;
+    };
+    const st=`@page {size: A4,margin: 50px 0 50px 0}`
     return (
         <Paper className={`resume ${classes.resumeBlock}`} ref={ref}>
+            {/* <style>{getPageMargins()}</style> */}
             <Grid item container lg={12}>
                 {/* <Grid item container xs={1} md={1} lg={1} spacing={1} direction='column'>
                 </Grid> */}
