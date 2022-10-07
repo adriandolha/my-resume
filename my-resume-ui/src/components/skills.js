@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) =>
             textTransform: 'uppercase',
             marginTop: theme.spacing(2),
             fontWeight: 'bold',
-            [theme.breakpoints.down('md')]: {
+            [theme.breakpoints.down('xs')]: {
                 fontSize: '22px'
               }
         },
@@ -62,7 +62,13 @@ const useStyles = makeStyles((theme) =>
             fontStyle: 'italic',
             color: theme.palette.success.main
         },
-
+        personalProjects: {
+             "@media print":{
+                "&>*:nth-child(3)":{
+                    marginTop: '150px'
+                  }
+             } 
+        },
     }),
 );
 function GroupSkill({ name, group, classes }) {
@@ -128,7 +134,7 @@ function Skills({ resume }) {
     const skillTitleVariant = 'h5';
     const sectionTitleVariant = 'h4';
     return (
-        <Grid container direction='column'>
+        <Grid container direction='column' >
             <Grid item>
                 <Typography variant={sectionTitleVariant} className={classes.sectionTitle}>
                     {resume.skillsTitle}
@@ -169,7 +175,7 @@ function Skills({ resume }) {
                     {resume.personalProjectsTitle}
                 </Typography>
             </Grid>
-            <Grid item>
+            <Grid item container spacing={3} className={classes.personalProjects}>
                 {resume.personalProjects && resume.personalProjects.map((project, i) => {
                     return <Fragment key={i}><Grid item><PersonalProject resume={resume} data={project} /></Grid></Fragment>
                 })}

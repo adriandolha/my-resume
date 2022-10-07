@@ -23,7 +23,9 @@ const resume = {
                 ['Python',
                     'Flask',
                     'Airflow',
-                    'Pandas'],
+                    'Pandas',
+                    'Tabula',
+                    'Seaborn'],
                 ['Java',
                     'Spring',
                     'Spring Boot',
@@ -38,7 +40,8 @@ const resume = {
             level: 5, items: [
                 ['AWS', 'Lambda', 'API Gateway', 'DynamoDB', 'RDS', 'Cognito', 'S3', 'SNS', 'SQS', 'CloudFront', 'Route53',
                 'ECS', 'EKS', 'Parameter Store', 'Secrets Manager'],
-                ['Azure',  'AKS', 'Azure Functions', 'Azure API Management', 'Azure Event Hub', 'Azure Blob Storage', 'Azure Key Vault']
+                ['Azure',  'AKS', 'Azure Functions', 'Azure API Management', 'Azure Event Hub', 'Azure Blob Storage',
+                'Azure Key Vault', 'Azure Cosmos DB']
             ]
         },
         devops: {
@@ -105,15 +108,15 @@ const resume = {
     tasksTitle: 'Achievements/Tasks',
     workExperiences: [
     {
-            jobTitle: 'Serverless Python Developer',
+            jobTitle: 'Development Consultant',
             company: 'Freelancing',
-            from: '03/2022',
+            from: '04/2022',
             to: 'Present',
             tasks: [
-                'After 13 years, I took a small break from full time employee, engaging on the freelancing journey.',
-                'Visited several countries.',
-                'Worked on personal projects. Please check personal projects section for more details.',
-                'Part time consultant and serverless developer.'
+                'After 13 years of experience as a full-time employee, I was up for a new challenge, so I embarked on the freelancing journey.',
+                'Got up to date with latest Frontend technologies, mainly React and Material UI.',
+                'Worked on personal projects, in line with my interest in Cloud and Serverless architectures. Please check the personal projects section for more details.',
+                'Worked as part-time development consultant.'
             ],
             techStack: ['Python', 'AWS', 'Serverless', 'React']
         },
@@ -121,7 +124,7 @@ const resume = {
             jobTitle: 'Head of Development',
             company: 'Endava',
             from: '01/2019',
-            to: '03/2022',
+            to: '04/2022',
             tasks: [
                 'Coordinated Development Discipline with 10 Discipline Leads and over 400 developers.',
                 'Built 6 technical communities for Java, .NET, Android, iOS, Frontend, Python',
@@ -235,7 +238,7 @@ const resume = {
             'Deployed React frontend on S3, CloudFront and Route53'
         ],
         techStack: ['Serverless','Python', 'AWS', 'Lambda', 'SAM', 'SNS', 'SQS', 'S3', 'DynamoDB', 'CloudFront', 'Cognito',
-         'API Gateway', 'Route53', 'CodePipeline', 'CodeBuild', 'Secrets Manager', 'Parameter Store', 'pandas', 'tabula',
+         'API Gateway', 'Route53', 'CodePipeline', 'CodeBuild', 'Secrets Manager', 'Parameter Store', 'Pandas', 'Tabula',
         'React', 'Material UI']
     },
     {
@@ -259,6 +262,19 @@ const resume = {
             'Deployed React frontend on S3, CloudFront and Route53.'
         ],
         techStack: ['React','Material UI', 'AWS', 'S3', 'CloudFront', 'SAM', 'Route53', 'Lambda', 'Github Actions']
+    },
+    {
+        title: 'Development Discipline Tools',
+        from: '06/2019',
+        to: '12/2021',
+        description: '',
+        tasks: ['Extracted complex data from salary review Excel files.',
+            'Created reports and dashboards from salary review data.',
+            'Extracted workforce planning data from internal tools.',
+            'Created reports from workforce planning tool.',
+            'Created development skills report.'
+        ],
+        techStack: ['Python', 'Flask', 'Pandas', 'Seaborn', 'Openpyxl']
     },
     {
         title: 'Lorem Ipsum',

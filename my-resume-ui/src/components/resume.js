@@ -25,6 +25,10 @@ const useStyles = makeStyles((theme) =>
             },
             paddingRight: theme.spacing(10),
             paddingBottom: theme.spacing(3),
+            "@media print":{
+                margin: "0 16mm 0 16mm",
+                boxShadow: 'none'
+            }
         },
         divider: {
             color: theme.palette.primary.main,

@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) =>
             marginTop: theme.spacing(2),
             [theme.breakpoints.down('xs')]: {
                 fontSize: '22px'
-              }
+            }
         },
         work: {
             marginTop: '10px'
@@ -35,14 +35,19 @@ const useStyles = makeStyles((theme) =>
             order: 1,
             [theme.breakpoints.down('xs')]: {
                 order: 2
-              }
+            },
+            "@media print": {
+                "&>*:nth-child(6)": {
+                    marginTop: '150px'
+                }
+            }
         },
-        skills:{
-            order:2,
+        skills: {
+            order: 2,
             [theme.breakpoints.down('xs')]: {
                 marginLeft: '60px',
-                order:1
-              }
+                order: 1
+            }
         },
         workDate: {
             fontStyle: 'italic',

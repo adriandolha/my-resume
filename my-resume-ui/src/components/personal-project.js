@@ -68,12 +68,14 @@ function PersonalProject({ resume, data }) {
                         {`${data.title} (${data.from} - ${data.to})`}
                     </Typography>
                 </Grid>
-                <Grid item container direction='row' justifyContent='flex-start' alignItems='center'>
-                    <GitHubIcon className={classes.myIcon} />
-                    <Link href={data.github.link} className={classes.myLink}>
-                        <Typography variant='body1'>{data.github.placeholder}</Typography>
-                    </Link>
-                </Grid>
+                {data.github &&
+                    <Grid item container direction='row' justifyContent='flex-start' alignItems='center'>
+                        <GitHubIcon className={classes.myIcon} />
+                        <Link href={data.github.link} className={classes.myLink}>
+                            <Typography variant='body1'>{data.github.placeholder}</Typography>
+                        </Link>
+                    </Grid>
+                }
 
             </Grid>
 

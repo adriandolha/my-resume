@@ -16,7 +16,8 @@ const useStyles = makeStyles((theme) =>
             float: 'left'
         },
         workExperience: {
-            marginRight: theme.spacing(3)
+            marginRight: theme.spacing(3),
+            marginBottom: theme.spacing(1)
         },
         work: {
             marginTop: '10px'
@@ -99,7 +100,7 @@ function WorkExperience({ resume, data, onResize }) {
     )
 
     return (
-        <Grid item container xs={12} md={12} lg={12} direction='column' className={classes.workExperience}>
+        <Grid item container xs={12} md={12} lg={12} direction='column' className={`${classes.workExperience} work-experience`}>
             <Grid item>
                 <MarkedComponent component={<Header />} markerColor={theme.palette.success.main} />
             </Grid>

@@ -48,7 +48,10 @@ const useStyles = makeStyles((theme) =>
             height: 180,
             width: 180,
             borderColor: '#40b281',
-            border: '5px solid'
+            border: '5px solid',
+            [theme.breakpoints.down('xs')]: {
+                marginLeft: '60px',
+              },
         },
         personalDetails: {
             marginBottom: '20px'
@@ -121,7 +124,7 @@ function PersonalDetails({ resume, onResize }) {
                 </Item>
             </Grid>
             <Grid item container xs={12} sm={2} md={2} lg={2} justifyContent='center'>
-                <Avatar alt="" src={resume.personalDetails.picture} className={classes.myPicture} />
+                <Grid item><Avatar alt="" src={resume.personalDetails.picture} className={classes.myPicture} /></Grid>
             </Grid>
             <Grid item xs={12} sm={5} md={5} lg={5} container direction='column' spacing={1} className={classes.contactDetails}>
                 <Grid item container direction='row' justifyContent='flex-end' alignItems='center' columns={{ sm: 1, md: 2, lg: 2 }}>
