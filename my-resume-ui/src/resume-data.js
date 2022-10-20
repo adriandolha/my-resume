@@ -8,7 +8,7 @@ const resume = {
         cloud native microservices and event driven architectures.`,
         picture: window.location.origin + '/img/me.jpeg',
         contact: {
-            email: 'adrian.dolha1@gmail.com',
+            email: 'adriandolha.biz@gmail.com',
             phone: '+40743389452',
             location: 'Cluj-Napoca, Romania',
             github: { link: 'https://github.com/adriandolha', placeholder: 'github.com/in/adriandolha' },
