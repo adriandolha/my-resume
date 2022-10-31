@@ -22,6 +22,7 @@ const resume = {
             level: 5, items: [
                 ['Python',
                     'Flask',
+                    'Django',
                     'Airflow',
                     'Pandas',
                     'Tabula',
@@ -153,7 +154,7 @@ const resume = {
                 'Developed a strategy to migrate from AWS to Azure.',
                 'Documented application architecture.'
             ],
-            techStack: ['Python', 'Flask', 'Apache Airflow', 'AWS', 'S3', 'DynamoDB', 'SQS', 'AWS Lambda', 'EKS',
+            techStack: ['Python', 'Flask', 'Django', 'Apache Airflow', 'AWS', 'S3', 'DynamoDB', 'SQS', 'AWS Lambda', 'EKS',
             'Azure', 'AKS', 'Azure Functions', 'Azure API Management', 'Azure Event Hub', 'Azure Blob Storage', 'Azure Key Vault']
         },
         {
