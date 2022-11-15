@@ -39,7 +39,7 @@ const resume = {
         cloud: {
             name: 'Cloud',
             level: 5, items: [
-                ['AWS', 'Lambda', 'API Gateway', 'DynamoDB', 'RDS', 'Cognito', 'S3', 'SNS', 'SQS', 'CloudFront', 'Route53',
+                ['AWS', 'Lambda', 'API Gateway', 'DynamoDB', 'RDS', 'Redshift', 'Cognito', 'S3', 'SNS', 'SQS', 'CloudFront', 'Route53',
                 'ECS', 'EKS', 'Parameter Store', 'Secrets Manager'],
                 ['Azure',  'AKS', 'Azure Functions', 'Azure API Management', 'Azure Event Hub', 'Azure Blob Storage',
                 'Azure Key Vault', 'Azure Cosmos DB']
@@ -241,6 +241,34 @@ const resume = {
         techStack: ['Serverless','Python', 'AWS', 'Lambda', 'SAM', 'SNS', 'SQS', 'S3', 'DynamoDB', 'CloudFront', 'Cognito',
          'API Gateway', 'Route53', 'CodePipeline', 'CodeBuild', 'Secrets Manager', 'Parameter Store', 'Pandas', 'Tabula',
         'React', 'Material UI']
+    },
+    {
+        title: 'Django PDF',
+        github: { link: 'https://github.com/adriandolha/django-pdf', placeholder: 'Github Repo' },
+        from: '10/2022',
+        to: 'Present',
+        description: '',
+        tasks: ['Generated user data using faker and saved it in CSV format in S3.',
+            'Loaded CSV data into Redshift and created reports using Redshift and cached them in Redis.',
+            'Generated PDf reports using weasyprint, selenium and reportlab.',
+            'Created Django dashboard page.'
+        ],
+        techStack: ['Python','Django', 'WeasyPrint', 'Selenium','Reportlab', 'Redis', 'Redshift', 'Postgres',
+        'Bootstrap', 'ChartsJS', 'Seaborn', 'Pandas', 'CloudFormation']
+    },
+    {
+        title: 'Django Scaling',
+        github: { link: 'https://github.com/adriandolha/django-scaling', placeholder: 'Github Repo' },
+        from: '10/2022',
+        to: 'Present',
+        description: '',
+        tasks: ['Created simple Django app with one page.',
+            'Packaged Django app as Docker image. Used uWSGI with 4 workers.',
+            'Deployed Django app in AWS ECS',
+            'Load balanced requests using ALB and Route53 weighted routing for cross region load balancing.',
+            'Ran 40k requests per second using distributed Locust tests.'
+        ],
+        techStack: ['Python','Django', 'Locust', 'ECS', 'ALB', 'Route53', 'CloudFormation']
     },
     {
         title: 'Hodor',

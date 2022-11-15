@@ -64,8 +64,8 @@ const useStyles = makeStyles((theme) =>
         },
         personalProjects: {
              "@media print":{
-                "&>*:nth-child(3)":{
-                    marginTop: '150px'
+                "&>*:nth-child(2)":{
+                    marginTop: '290px'
                   }
              } 
         },
