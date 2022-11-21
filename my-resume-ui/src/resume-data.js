@@ -114,10 +114,11 @@ const resume = {
             from: '04/2022',
             to: 'Present',
             tasks: [
-                'After 13 years of experience as a full-time employee, I was up for a new challenge, so I embarked on the freelancing journey.',
-                'Got up to date with latest Frontend technologies, mainly React and Material UI.',
-                'Worked on personal projects, in line with my interest in Cloud and Serverless architectures. Please check the personal projects section for more details.',
-                'Worked as part-time development consultant.'
+                'I work as a hands-on Solution Architect/Python Freelancer to help businesses deliver top quality products and meet their targets.',
+                'I’m proficient in both Python and Java for backend, Javascript (React) for frontend.',
+                'I can architect and implement both Microservices solutions with Docker/Kubernetes and Serverless solutions on AWS.',
+                'I can write Infrastructure as Code using Terraform or CloudFormation.',
+                'I’m passionate about technology, focused on problem-solving, no matter the programming language or framework.'
             ],
             techStack: ['Python', 'AWS', 'Serverless', 'React']
         },
@@ -165,9 +166,7 @@ const resume = {
             tasks: [
                 'Designed the integration of new services.',
                 'Improved availability from 95 to 99.',
-                'Migrated from ANT to MAVEN and built Jenkins pipelines.',
                 'Implemented monitoring using ELK stack.',
-                'Provided support for the adoption of APM tool.',
                 'Automated release process and increased test coverage with 20% on unit tests and 50% on e2e tests.',
                 'Provided support to migrate from on-prem to AWS.',
                 'Split the monolith and worked to containerize the application using Docker/ Kubernetes - developed demo projects based on Spring Boot/Kafka/ ElasticSearch /Redis, etc.',

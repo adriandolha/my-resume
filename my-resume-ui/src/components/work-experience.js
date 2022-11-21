@@ -10,7 +10,11 @@ const useStyles = makeStyles((theme) =>
     createStyles({
         jobTitle: {
             float: 'left',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            [theme.breakpoints.down('xs')]: {
+                textAlign: 'left'
+            },
+
         },
         company: {
             float: 'left'
@@ -84,9 +88,9 @@ function WorkExperience({ resume, data, onResize }) {
                 <List className={classes.taskList} dense={true} disablePadding={true}>
                     {data.tasks && data.tasks.map((task, i) => (
                         <Fragment key={i}>
-                            <ListItem className={classes.taskListItem} >
-                                <CircleIcon sx={{ padding: '0 10px 0 0', margin: '0', fontSize: '8px', color: theme.palette.success.dark }} />
-                                <Typography variant='body1'>{task}</Typography>
+                            <ListItem className={classes.taskListItem} alignItems='flex-start'>
+                                <CircleIcon sx={{ padding: '0 10px 0 0', margin: '10px 0 0 0', fontSize: '8px', color: theme.palette.success.dark }} />
+                                <Typography variant='body1' sx={{paddingTop:'10px'}}>{task}</Typography>
                             </ListItem>
                         </Fragment>
                     ))}

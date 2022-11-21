@@ -43,7 +43,7 @@ function Education({ data }) {
                 </Typography>
             </Grid>
             <Grid item>
-                <Typography variant="h5" className={classes.educationTitle}>
+                <Typography variant="h5" align="left" className={classes.educationTitle}>
                     {data.title}
                 </Typography>
             </Grid>
@@ -52,7 +52,7 @@ function Education({ data }) {
     const EducationDetails = () => (
         <Grid item container justifyContent='space-between'>
             <Typography variant="body1" align='left' className={classes.educationDate}>
-                {data.from} - {data.to}
+                {data.from} - {data.to}&nbsp;
             </Typography>
             <Typography variant="body1" align='left' className={classes.educationLocation}>
                 {data.location}

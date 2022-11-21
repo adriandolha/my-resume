@@ -8,6 +8,8 @@ import Education from './education';
 import { Fragment } from 'react';
 import Skills from './skills';
 import MarkedComponent from './marked-component';
+import PersonalProject from './personal-project';
+
 const useStyles = makeStyles((theme) =>
     createStyles({
         root: {
@@ -25,7 +27,7 @@ const useStyles = makeStyles((theme) =>
             float: 'left',
             marginTop: theme.spacing(2),
             [theme.breakpoints.down('xs')]: {
-                fontSize: '22px'
+                fontSize: '20px'
             }
         },
         work: {
@@ -38,7 +40,7 @@ const useStyles = makeStyles((theme) =>
             },
             "@media print": {
                 "&>*:nth-child(6)": {
-                    marginTop: '150px'
+                    marginTop: '130px'
                 }
             }
         },
@@ -61,7 +63,24 @@ const useStyles = makeStyles((theme) =>
         },
         taskList: {
             listStyle: 'circle',
-        }
+        },
+        personalProjects: {
+            [theme.breakpoints.down('xs')]: {
+                display: 'block'
+            },
+            [theme.breakpoints.up('sm')]: {
+                display: 'none'
+            }
+        },
+        personalProjectsTitle: {
+            [theme.breakpoints.down('xs')]: {
+                display: 'block'
+            },
+            [theme.breakpoints.up('sm')]: {
+                display: 'none'
+            }
+
+        },
     }),
 );
 
@@ -70,6 +89,9 @@ function ResumeBody({ resume, onResize }) {
     const theme = resumeTheme(useTheme());
     const classes = useStyles(theme);
     let workExperiences = resume.workExperiences
+    const skillTitleVariant = 'h5';
+    const sectionTitleVariant = 'h4';
+
 
     return (
         <Grid item container spacing={4} columns={{ sm: 3, md: 3, lg: 3 }} className={classes.work}>
@@ -87,6 +109,17 @@ function ResumeBody({ resume, onResize }) {
                         </Grid>
                     </Fragment>)
                 })}
+                <Grid item className={classes.personalProjectsTitle}>
+                    <MarkedComponent component={<Typography variant={skillTitleVariant} className={classes.sectionTitle}>
+                        {resume.personalProjectsTitle}
+                    </Typography>} />
+                </Grid>
+                <Grid item container spacing={3} className={classes.personalProjects}>
+                    {resume.personalProjects && resume.personalProjects.map((project, i) => {
+                        return <Fragment key={i}><Grid item><PersonalProject resume={resume} data={project} marked={true} /></Grid></Fragment>
+                    })}
+                </Grid>
+
                 <Grid item>
                     <MarkedComponent component={<Typography variant="h4" className={classes.sectionTitle}>
                         {resume.educationTitle}

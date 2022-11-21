@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) =>
             fontWeight: 'bold',
             [theme.breakpoints.down('xs')]: {
                 fontSize: '22px'
-              }
+            }
         },
         skill: {
             borderRadius: '10px',
@@ -63,11 +63,19 @@ const useStyles = makeStyles((theme) =>
             color: theme.palette.success.main
         },
         personalProjects: {
-             "@media print":{
-                "&>*:nth-child(2)":{
+            [theme.breakpoints.down('xs')]: {
+                display: 'none'
+            },
+            "@media print": {
+                "&>*:nth-child(2)": {
                     marginTop: '290px'
-                  }
-             } 
+                }
+            }
+        },
+        personalProjectsTitle: {
+            [theme.breakpoints.down('xs')]: {
+                display: 'none'
+            }
         },
     }),
 );
@@ -170,7 +178,7 @@ function Skills({ resume }) {
                 </Typography>
                 <Languages languages={resume.languages} classes={classes} />
             </Grid>
-            <Grid item>
+            <Grid item className={classes.personalProjectsTitle}>
                 <Typography variant={skillTitleVariant} className={classes.sectionTitle}>
                     {resume.personalProjectsTitle}
                 </Typography>

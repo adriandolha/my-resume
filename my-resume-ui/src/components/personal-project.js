@@ -6,12 +6,17 @@ import { useTheme, createStyles, makeStyles } from '@material-ui/core/styles';
 import CircleIcon from '@mui/icons-material/Circle';
 import { Fragment, useEffect } from 'react';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import MarkedComponent from './marked-component';
 
 const useStyles = makeStyles((theme) =>
     createStyles({
         projectTitle: {
             float: 'left',
-            fontWeight: 'bold'
+            fontWeight: 'bold',
+            [theme.breakpoints.down('xs')]: {
+                fontSize: '18px'
+            }
+
         },
         myLink: {
             color: 'black',
@@ -56,45 +61,75 @@ const useStyles = makeStyles((theme) =>
     }),
 );
 
-function PersonalProject({ resume, data }) {
+function PersonalProjectDetails({ resume, data }) {
     const theme = resumeTheme(useTheme());
     const classes = useStyles(theme);
+
+    return (
+        <Grid item>
+            <List className={classes.taskList} dense={true} disablePadding={true}>
+                {data.tasks && data.tasks.map((task, i) => (
+                    <Fragment key={i}>
+                        <ListItem className={classes.taskListItem} alignItems='flex-start'>
+                            <CircleIcon sx={{ padding: '0 10px 0 0', margin: '10px 0 0 0', fontSize: '8px', color: theme.palette.success.dark }} />
+                            <Typography variant='body1'>{task}</Typography>
+                        </ListItem>
+                    </Fragment>
+                ))}
+            </List>
+            {data.techStack && data.techStack.map(techStack => (
+                <Fragment key={techStack}><Typography variant='body1' className={classes.techStack}>{techStack}</Typography></Fragment>
+            ))}
+
+        </Grid>
+
+    )
+}
+
+function GithubRepo({ data, marked }) {
+    const theme = resumeTheme(useTheme());
+    const classes = useStyles(theme);
+
+    return marked ? <MarkedComponent markerColor={theme.palette.success.main}
+        component={<Grid item container direction='row' justifyContent='flex-start' alignItems='center'>
+            <GitHubIcon className={classes.myIcon} />
+            <Link href={data.github.link} className={classes.myLink}>
+                <Typography variant='body1'>{data.github.placeholder}</Typography>
+            </Link>
+        </Grid>} />
+        : <Grid item container direction='row' justifyContent='flex-start' alignItems='center'>
+            <GitHubIcon className={classes.myIcon} />
+            <Link href={data.github.link} className={classes.myLink}>
+                <Typography variant='body1'>{data.github.placeholder}</Typography>
+            </Link>
+        </Grid>
+
+}
+function PersonalProject({ resume, data, marked }) {
+    const theme = resumeTheme(useTheme());
+    const classes = useStyles(theme);
+    const PersonalProjectTitle = () => {
+        return <Typography variant="h6" align="left" className={classes.projectTitle}>
+            {`${data.title} (${data.from} - ${data.to})`}
+        </Typography>
+    }
 
     return (
         <Grid item container xs={12} md={12} lg={12} direction='column' >
             <Grid item container direction='column' >
                 <Grid item>
-                    <Typography variant="h6" className={classes.projectTitle}>
-                        {`${data.title} (${data.from} - ${data.to})`}
-                    </Typography>
+                    {marked ? <MarkedComponent component={<PersonalProjectTitle />} markerColor={theme.palette.success.main} />
+                        : <PersonalProjectTitle />}
                 </Grid>
-                {data.github &&
-                    <Grid item container direction='row' justifyContent='flex-start' alignItems='center'>
-                        <GitHubIcon className={classes.myIcon} />
-                        <Link href={data.github.link} className={classes.myLink}>
-                            <Typography variant='body1'>{data.github.placeholder}</Typography>
-                        </Link>
-                    </Grid>
-                }
+                {data.github && <GithubRepo data={data} marked={marked} />}
+
 
             </Grid>
+            {marked ?
+                <MarkedComponent component={<PersonalProjectDetails resume={resume} data={data} />} />
+                :
+                <PersonalProjectDetails resume={resume} data={data} />}
 
-            <Grid item>
-                <List className={classes.taskList} dense={true} disablePadding={true}>
-                    {data.tasks && data.tasks.map((task, i) => (
-                        <Fragment key={i}>
-                            <ListItem className={classes.taskListItem} >
-                                <CircleIcon sx={{ padding: '0 10px 0 0', margin: '0', fontSize: '8px', color: theme.palette.success.dark }} />
-                                <Typography variant='body1'>{task}</Typography>
-                            </ListItem>
-                        </Fragment>
-                    ))}
-                </List>
-                {data.techStack && data.techStack.map(techStack => (
-                    <Fragment key={techStack}><Typography variant='body1' className={classes.techStack}>{techStack}</Typography></Fragment>
-                ))}
-
-            </Grid>
         </Grid>
     );
 }
