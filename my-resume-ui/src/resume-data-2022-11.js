@@ -1,9 +1,11 @@
 const resume = {
     personalDetails: {
         name: 'Adrian Dolha',
-        jobTitle: 'Full-Stack Python and React Freelancer',
-        description: `As a freelance Python and React developer, I specialize in web development, data engineering, and software architecture. With a passion for delivering exceptional user experiences, I'm constantly seeking new challenges and opportunities to build scalable and high-performing solutions using Python, React, and Cloud.
-As a skilled Software Architect, I've worked in the information technology and services industry, bringing my expertise in Python, React, Java, Cloud and Enterprise Architecture to every project I undertake.`,
+        jobTitle: 'Senior Software Engineer',
+        description: `Accomplished and energetic Senior Architect with a solid history of achievement in Enterprise Software.
+        Motivated leader with strong organizational and prioritization abilities.
+        Seeking to leverage his technical and professional expertise in the latest technologies such as serverless,
+        cloud native microservices and event driven architectures.`,
         picture: window.location.origin + '/img/me.jpeg',
         contact: {
             email: 'adriandolha.biz@gmail.com',
@@ -107,19 +109,16 @@ As a skilled Software Architect, I've worked in the information technology and s
     tasksTitle: 'Achievements/Tasks',
     workExperiences: [
     {
-            jobTitle: 'Full-Stack Python and React Developer',
-            company: 'Freelance',
-            from: '05/2022',
+            jobTitle: 'Development Consultant',
+            company: 'Freelancing',
+            from: '04/2022',
             to: 'Present',
             tasks: [
-                'Implemented chat functionality in Django and React.',
-                'Added multi-tenancy support to an existing application using Django and MySQL.',
-                'Achieved up to 30x improvement in API performance (Django REST Framework) by optimizing queries and caching results using Redis and MySQL, resulting in faster response times and improved user experience.',
-                'Created a key WordPress plugin in React that integrates seamlessly with the existing API (Django REST Framework), providing clients with a powerful and flexible tool for extending their web applications with custom functionality.',
-                'Scraped data from multiple websites using Beautiful Soup, Pandas, and Airflow.',
-                'Designed and implemented a solution to scale a Django application in AWS (ECS, ECR, CloudFormation, and more).',
-                'Implemented social authentication in Flask using OAuth2 for Google and Facebook, enabling users to easily and securely sign in using their social media accounts.',
-                'Developed a PDF report generation system using ReportLab and Django, enabling the creation of customizable and professional reports with features such as dynamic charts and graphs, tables, and images.'
+                'I work as a hands-on Solution Architect/Python Freelancer to help businesses deliver top quality products and meet their targets.',
+                'I’m proficient in both Python and Java for backend, Javascript (React) for frontend.',
+                'I can architect and implement both Microservices solutions with Docker/Kubernetes and Serverless solutions on AWS.',
+                'I can write Infrastructure as Code using Terraform or CloudFormation.',
+                'I’m passionate about technology, focused on problem-solving, no matter the programming language or framework.'
             ],
             techStack: ['Python', 'AWS', 'Serverless', 'React']
         },
