@@ -60,14 +60,15 @@ As a skilled Software Architect, I've worked in the information technology and s
         },
         frontend: {
             name: 'Frontend',
-            level: 3, items: [
-                ['React',
+            level: 4, items: [
+                ['React', 'Redux',
                     'Material UI',
-                    'Bootstrap'],
+                    'Bootstrap',
+                    'Ant Design'],
                 ['Javascript',
                     'HTML',
                     'CSS'],
-                ['Knockout']
+                ['Knockout', 'Nextjs']
             ]
         }
     },
@@ -121,7 +122,7 @@ As a skilled Software Architect, I've worked in the information technology and s
                 'Implemented social authentication in Flask using OAuth2 for Google and Facebook, enabling users to easily and securely sign in using their social media accounts.',
                 'Developed a PDF report generation system using ReportLab and Django, enabling the creation of customizable and professional reports with features such as dynamic charts and graphs, tables, and images.'
             ],
-            techStack: ['Python', 'AWS', 'Serverless', 'React']
+            techStack: ['Python', 'AWS', 'Django', 'Serverless', 'React']
         },
         {
             jobTitle: 'Head of Development',
