@@ -66,11 +66,11 @@ const useStyles = makeStyles((theme) =>
             [theme.breakpoints.down('xs')]: {
                 display: 'none'
             },
-            "@media print": {
-                "&>*:nth-child(2)": {
-                    marginTop: '290px'
-                }
-            }
+//            "@media print": {
+//                "&>*:nth-child(2)": {
+//                    marginTop: '290px'
+//                }
+//            }
         },
         personalProjectsTitle: {
             [theme.breakpoints.down('xs')]: {

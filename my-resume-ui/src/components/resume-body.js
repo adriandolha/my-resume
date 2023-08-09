@@ -38,11 +38,11 @@ const useStyles = makeStyles((theme) =>
             [theme.breakpoints.down('xs')]: {
                 order: 2
             },
-            "@media print": {
-                "&>*:nth-child(6)": {
-                    marginTop: '130px'
-                }
-            }
+//            "@media print": {
+//                "&>*:nth-child(6)": {
+//                    marginTop: '130px'
+//                }
+//            }
         },
         skills: {
             order: 2,

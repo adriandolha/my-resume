@@ -21,6 +21,7 @@ As a skilled Software Architect, I've worked in the information technology and s
                 ['Python',
                     'Flask',
                     'Django',
+                    'FastAPI',
                     'Airflow',
                     'Pandas',
                     'Tabula',
@@ -40,7 +41,9 @@ As a skilled Software Architect, I've worked in the information technology and s
                 ['AWS', 'Lambda', 'API Gateway', 'DynamoDB', 'RDS', 'Redshift', 'Cognito', 'S3', 'SNS', 'SQS', 'CloudFront', 'Route53',
                 'ECS', 'EKS', 'Parameter Store', 'Secrets Manager'],
                 ['Azure',  'AKS', 'Azure Functions', 'Azure API Management', 'Azure Event Hub', 'Azure Blob Storage',
-                'Azure Key Vault', 'Azure Cosmos DB']
+                'Azure Key Vault', 'Azure Cosmos DB'],
+                ['Google', 'Cloud Run', 'Cloud SQL','Pub/Sub', 'Cloud Scheduler', 'VM (DeepLearning, GPU)',
+                'Firebase Hosting', 'Firebase Authentication', 'Firebase Realtime Database'],
             ]
         },
         devops: {
@@ -64,8 +67,10 @@ As a skilled Software Architect, I've worked in the information technology and s
                 ['React', 'Redux',
                     'Material UI',
                     'Bootstrap',
-                    'Ant Design'],
+                    'Ant Design',
+                    'Tailwind'],
                 ['Javascript',
+                'Typescript',
                     'HTML',
                     'CSS'],
                 ['Knockout', 'Nextjs']
@@ -107,7 +112,29 @@ As a skilled Software Architect, I've worked in the information technology and s
     workExperienceTitle: 'Work Experience',
     tasksTitle: 'Achievements/Tasks',
     workExperiences: [
-    {
+        {
+            jobTitle: 'Full-Stack Python and React Developer',
+            company: 'Renew',
+            from: '05/2023',
+            to: 'Present',
+            tasks: [
+                'Leveraged Generative AI techniques to create cutting-edge AI tools.',
+                'Successfully trained the LoRA model using kohya-ss scripts, resulting in elevated model performance.',
+                'Generated a diverse range of images from prompts using kohya-ss scripts.',
+                'Utilized advanced models including RealVision2&4, DreamShaper7, SD 1.5, and SDXL to train characters, styles, objects, and text-to-image transformations.',
+                'Took charge of end-to-end development, encompassing both frontend and backend components.',
+                'Implemented robust user authentication mechanisms including email/password, Google authentication, and anonymous authentication using Firebase Authentication.',
+                'Established real-time updates for training and generation tasks through Pub/Sub and Firebase Realtime Database integration, enhancing user engagement.',
+                'Introduced a dynamic credits system and seamlessly integrated Stripe payments and subscriptions for smooth financial transactions.',
+                'Ensured streamlined development workflows by implementing a comprehensive CI/CD pipeline using GitHub Actions.',
+            ],
+            techStack: ['Python', 'FastAPI',
+            'React', 'NextJS', 'Tailwind', 'Typescript',
+            'GCP', 'Cloud SQL', 'Cloud Run', 'Pub/Sub', 'Cloud Scheduler', 'VM (DeepLearning, GPU)',
+            'Firebase Hosting', 'Firebase Authentication', 'Firebase Realtime Database',
+            'Stripe']
+        },
+        {
             jobTitle: 'Full-Stack Python and React Developer',
             company: 'Freelance',
             from: '05/2022',
