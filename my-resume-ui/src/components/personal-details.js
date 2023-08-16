@@ -2,7 +2,7 @@ import Typography from '@material-ui/core/Typography';
 import Grid from '@material-ui/core/Grid';
 import Item from '@material-ui/core/Grid';
 import { Avatar, Box, Link } from '@material-ui/core';
-import me from '../static/images/me.jpeg'
+import me from '../static/images/me.png'
 import resumeTheme from '../theme';
 import { useTheme, createStyles, makeStyles } from '@material-ui/core/styles';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
