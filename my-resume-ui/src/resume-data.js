@@ -1,7 +1,7 @@
 const resume = {
     personalDetails: {
         name: 'Adrian Dolha',
-        jobTitle: 'Full-Stack Python and React Freelancer',
+        jobTitle: 'Full-Stack Python and React Developer',
         description: `As a freelance Python and React developer, I specialize in web development, data engineering, and software architecture. With a passion for delivering exceptional user experiences, I'm constantly seeking new challenges and opportunities to build scalable and high-performing solutions using Python, React, and Cloud.
 As a skilled Software Architect, I've worked in the information technology and services industry, bringing my expertise in Python, React, Java, Cloud and Enterprise Architecture to every project I undertake.`,
         picture: window.location.origin + '/img/me.png',
