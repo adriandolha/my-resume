@@ -24,24 +24,26 @@ As a skilled Software Architect, I've worked in the information technology and s
                     'FastAPI',
                     'Airflow',
                     'Pandas',
+                    'Tabula',
                     'Seaborn'],
                 ['Java',
                     'Spring',
                     'Spring Boot',
                     'Spring JPA',
-                    'Spring WebFlow'],
-                ['SQL Server', 'Oracle', 'Postgres', 'MySQL', 'MongoDB', 'DynamoDb', 'Redis', 'RabbitMQ', 'Databricks'],
+                    'Spring WebFlow',
+                    'Spring Web MVC'],
+                ['SQL Server', 'Oracle', 'Postgres', 'DynamoDb', 'Redis', 'RabbitMQ']
             ]
         },
         cloud: {
             name: 'Cloud',
             level: 5, items: [
                 ['AWS', 'Lambda', 'API Gateway', 'DynamoDB', 'RDS', 'Redshift', 'Cognito', 'S3', 'SNS', 'SQS', 'CloudFront', 'Route53',
-                    'ECS', 'EKS', 'Parameter Store', 'Secrets Manager'],
-                ['Azure', 'AKS', 'Azure Functions', 'Azure API Management', 'Azure Event Hub', 'Azure Blob Storage',
-                    'Azure Key Vault', 'Azure Cosmos DB'],
-                ['Google', 'GKE', 'Cloud Run', 'Cloud SQL', 'Pub/Sub', 'Cloud Scheduler', 'VM (DeepLearning, GPU)',
-                    'Firebase Hosting', 'Firebase Authentication', 'Firebase Realtime Database'],
+                'ECS', 'EKS', 'Parameter Store', 'Secrets Manager'],
+                ['Azure',  'AKS', 'Azure Functions', 'Azure API Management', 'Azure Event Hub', 'Azure Blob Storage',
+                'Azure Key Vault', 'Azure Cosmos DB'],
+                ['Google', 'Cloud Run', 'Cloud SQL','Pub/Sub', 'Cloud Scheduler', 'VM (DeepLearning, GPU)',
+                'Firebase Hosting', 'Firebase Authentication', 'Firebase Realtime Database'],
             ]
         },
         devops: {
@@ -62,15 +64,16 @@ As a skilled Software Architect, I've worked in the information technology and s
         frontend: {
             name: 'Frontend',
             level: 4, items: [
-                ['Typescript',
-                    'React',
-                    'NextJS',
-                    'Redux',
+                ['React', 'Redux',
                     'Material UI',
                     'Bootstrap',
                     'Ant Design',
-                    'Tailwind',
-                    'Flowbite'],
+                    'Tailwind'],
+                ['Javascript',
+                'Typescript',
+                    'HTML',
+                    'CSS'],
+                ['Knockout', 'Nextjs']
             ]
         }
     },
@@ -98,6 +101,12 @@ As a skilled Software Architect, I've worked in the information technology and s
         from: '09/2004',
         to: '07/2009',
         location: 'Cluj-Napoca'
+    }, {
+        title: 'Tiberiu Popovici High Scool',
+        specialization: 'Computer Science',
+        from: '09/2000',
+        to: '07/2004',
+        location: 'Cluj-Napoca'
     }
     ],
     workExperienceTitle: 'Work Experience',
@@ -105,31 +114,9 @@ As a skilled Software Architect, I've worked in the information technology and s
     workExperiences: [
         {
             jobTitle: 'Full-Stack Python and React Developer',
-            company: 'Boast',
-            from: '08/2023',
-            to: 'Present',
-            tasks: [
-                'Spearheaded a substantial increase in unit test coverage and championed Test-Driven Development (TDD), ensuring robust and reliable code.',
-                'Improved application performance through the implementation of a financial summary cache, enhancing user experience and responsiveness.',
-                'Enhanced features and resolved issues in CSV data integration, streamlining data processing workflows.',
-                'Introduced a cutting-edge tool for chat conversations over text and CSV data, utilizing OpenAI and Langchain technologies to enhance user interaction and data accessibility.',
-                'Took charge of end-to-end development, encompassing both frontend and backend components.',
-                'Collected key financial data for analytics and insights, contributing to informed business decisions.',
-                'Contributed to SOC2 compliance through support on vulnerability and code scans, ensuring the highest standards of security in development processes.',
-            ],
-            techStack: ['Python', 'Typescript',
-                'Django', 'Vue', 'Flask', 'React',
-                'Tailwind', 'Flowbite',
-                'MySQL', 'MongoDB',
-                'GCP', 'GKE', 'Kubernetes', 'Docker', 'Github Actions',
-                'OpenAI', 'Langchain',
-                'Databricks']
-        },
-        {
-            jobTitle: 'Full-Stack Python and React Developer',
             company: 'Renew',
             from: '05/2023',
-            to: '08/2023',
+            to: 'Present',
             tasks: [
                 'Leveraged Generative AI techniques to create cutting-edge AI tools.',
                 'Successfully trained the LoRA model using kohya-ss scripts, resulting in elevated model performance.',
@@ -142,16 +129,16 @@ As a skilled Software Architect, I've worked in the information technology and s
                 'Ensured streamlined development workflows by implementing a comprehensive CI/CD pipeline using GitHub Actions.',
             ],
             techStack: ['Python', 'FastAPI',
-                'React', 'NextJS', 'Tailwind', 'Typescript',
-                'GCP', 'Cloud SQL', 'Cloud Run', 'Pub/Sub', 'Cloud Scheduler', 'VM (DeepLearning, GPU)',
-                'Firebase Hosting', 'Firebase Authentication', 'Firebase Realtime Database',
-                'Stripe']
+            'React', 'NextJS', 'Tailwind', 'Typescript',
+            'GCP', 'Cloud SQL', 'Cloud Run', 'Pub/Sub', 'Cloud Scheduler', 'VM (DeepLearning, GPU)',
+            'Firebase Hosting', 'Firebase Authentication', 'Firebase Realtime Database',
+            'Stripe']
         },
         {
             jobTitle: 'Full-Stack Python and React Developer',
             company: 'Freelance',
             from: '05/2022',
-            to: '05/2023',
+            to: 'Present',
             tasks: [
                 'Implemented chat functionality in Django and React.',
                 'Added multi-tenancy support to an existing application using Django and MySQL.',
@@ -198,7 +185,7 @@ As a skilled Software Architect, I've worked in the information technology and s
                 'Documented application architecture.'
             ],
             techStack: ['Python', 'Flask', 'Django', 'Apache Airflow', 'AWS', 'S3', 'DynamoDB', 'SQS', 'AWS Lambda', 'EKS',
-                'Azure', 'AKS', 'Azure Functions', 'Azure API Management', 'Azure Event Hub', 'Azure Blob Storage', 'Azure Key Vault']
+            'Azure', 'AKS', 'Azure Functions', 'Azure API Management', 'Azure Event Hub', 'Azure Blob Storage', 'Azure Key Vault']
         },
         {
             jobTitle: 'Product Architect',
@@ -267,8 +254,8 @@ As a skilled Software Architect, I've worked in the information technology and s
         from: '04/2022',
         to: 'Present',
         description: '',
-        tasks: ['Created an application for expenses and bills analytics, which collects, processes and analyzes' +
-            'bank statements, providing a general view on your expenses. It generates reports that show how much' +
+        tasks: ['Created an application for expenses and bills analytics, which collects, processes and analyzes'+
+            'bank statements, providing a general view on your expenses. It generates reports that show how much'+
             'you spend on food, travel, etc.',
             'Extracted data from pdf bank statements using tabula and pandas.',
             'Implemented low cost search engine based on pandas, caching data stored in S3.',
@@ -279,9 +266,9 @@ As a skilled Software Architect, I've worked in the information technology and s
             'Implemented DynamoDB single table design.',
             'Deployed React frontend on S3, CloudFront and Route53'
         ],
-        techStack: ['Serverless', 'Python', 'AWS', 'Lambda', 'SAM', 'SNS', 'SQS', 'S3', 'DynamoDB', 'CloudFront', 'Cognito',
-            'API Gateway', 'Route53', 'CodePipeline', 'CodeBuild', 'Secrets Manager', 'Parameter Store', 'Pandas', 'Tabula',
-            'React', 'Material UI']
+        techStack: ['Serverless','Python', 'AWS', 'Lambda', 'SAM', 'SNS', 'SQS', 'S3', 'DynamoDB', 'CloudFront', 'Cognito',
+         'API Gateway', 'Route53', 'CodePipeline', 'CodeBuild', 'Secrets Manager', 'Parameter Store', 'Pandas', 'Tabula',
+        'React', 'Material UI']
     },
     {
         title: 'Django PDF',
@@ -294,8 +281,8 @@ As a skilled Software Architect, I've worked in the information technology and s
             'Generated PDf reports using weasyprint, selenium and reportlab.',
             'Created Django dashboard page.'
         ],
-        techStack: ['Python', 'Django', 'WeasyPrint', 'Selenium', 'Reportlab', 'Redis', 'Redshift', 'Postgres',
-            'Bootstrap', 'ChartsJS', 'Seaborn', 'Pandas', 'CloudFormation']
+        techStack: ['Python','Django', 'WeasyPrint', 'Selenium','Reportlab', 'Redis', 'Redshift', 'Postgres',
+        'Bootstrap', 'ChartsJS', 'Seaborn', 'Pandas', 'CloudFormation']
     },
     {
         title: 'Django Scaling',
@@ -309,7 +296,7 @@ As a skilled Software Architect, I've worked in the information technology and s
             'Load balanced requests using ALB and Route53 weighted routing for cross region load balancing.',
             'Ran 40k requests per second using distributed Locust tests.'
         ],
-        techStack: ['Python', 'Django', 'Locust', 'ECS', 'ALB', 'Route53', 'CloudFormation']
+        techStack: ['Python','Django', 'Locust', 'ECS', 'ALB', 'Route53', 'CloudFormation']
     },
     {
         title: 'Hodor',
@@ -320,7 +307,7 @@ As a skilled Software Architect, I've worked in the information technology and s
         tasks: ['Created an authentication and authorization service based on AuthLib to generate JWTs.',
             'Integrated Google authentication.'
         ],
-        techStack: ['Python', 'OAuthLib', 'JWT', 'Postgres', 'Kubernetes', 'Docker']
+        techStack: ['Python','OAuthLib', 'JWT', 'Postgres','Kubernetes', 'Docker']
     },
     {
         title: 'My Resume',
@@ -331,7 +318,7 @@ As a skilled Software Architect, I've worked in the information technology and s
         tasks: ['Created a simple React app to expose my resume.',
             'Deployed React frontend on S3, CloudFront and Route53.'
         ],
-        techStack: ['React', 'Material UI', 'AWS', 'S3', 'CloudFront', 'SAM', 'Route53', 'Lambda', 'Github Actions']
+        techStack: ['React','Material UI', 'AWS', 'S3', 'CloudFront', 'SAM', 'Route53', 'Lambda', 'Github Actions']
     },
     {
         title: 'Development Discipline Tools',
@@ -363,7 +350,7 @@ As a skilled Software Architect, I've worked in the information technology and s
             'Implemented frontend using React and Bootstrap.'
         ],
         techStack: ['Python', 'Flask', 'Postgres', 'Kubernetes', 'Istio', 'Terraform', 'Tekton', 'ArgoCD', 'AWS', 'EKS', 'ECS',
-            'React', 'Bootstrap', 'Prometheus', 'Grafana', 'ElasticSearch', 'Kibana']
+        'React', 'Bootstrap', 'Prometheus', 'Grafana', 'ElasticSearch', 'Kibana']
     },
     ]
 }
