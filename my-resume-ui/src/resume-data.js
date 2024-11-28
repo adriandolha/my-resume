@@ -109,6 +109,11 @@ As a skilled Software Architect, I've worked in the information technology and s
             from: '08/2023',
             to: 'Present',
             tasks: [
+                'Led the ingestion and processing of time evidence from raw data sources such as GitHub and Jira, ensuring data accuracy and integrity.',
+                'Implemented and managed ETL pipelines using **Fivetran** to automate data extraction and loading processes, significantly reducing manual effort and improving data availability.',
+                'Designed and orchestrated complex workflows with **Apache Airflow**, enhancing the efficiency of data processing tasks and enabling timely insights for stakeholders.',
+                'Collaborated with cross-functional teams to define data requirements and deliver actionable analytics, driving data-driven decision-making across the organization.',
+                'Mentored junior data engineers, fostering a culture of continuous learning and improvement within the team.',
                 'Spearheaded a substantial increase in unit test coverage and championed Test-Driven Development (TDD), ensuring robust and reliable code.',
                 'Improved application performance through the implementation of a financial summary cache, enhancing user experience and responsiveness.',
                 'Enhanced features and resolved issues in CSV data integration, streamlining data processing workflows.',
@@ -123,7 +128,7 @@ As a skilled Software Architect, I've worked in the information technology and s
                 'MySQL', 'MongoDB',
                 'GCP', 'GKE', 'Kubernetes', 'Docker', 'Github Actions',
                 'OpenAI', 'Langchain',
-                'Databricks']
+                'Databricks', 'Fivetran', 'Apache Airflow']
         },
         {
             jobTitle: 'Full-Stack Python and React Developer',
@@ -153,13 +158,12 @@ As a skilled Software Architect, I've worked in the information technology and s
             from: '05/2022',
             to: '05/2023',
             tasks: [
+                'Parsed PDF invoices from phone repairmen and classified them using LLM OpenAI.',
                 'Implemented chat functionality in Django and React.',
                 'Added multi-tenancy support to an existing application using Django and MySQL.',
                 'Achieved up to 30x improvement in API performance (Django REST Framework) by optimizing queries and caching results using Redis and MySQL, resulting in faster response times and improved user experience.',
                 'Created a key WordPress plugin in React that integrates seamlessly with the existing API (Django REST Framework), providing clients with a powerful and flexible tool for extending their web applications with custom functionality.',
                 'Scraped data from multiple websites using Beautiful Soup, Pandas, and Airflow.',
-                'Designed and implemented a solution to scale a Django application in AWS (ECS, ECR, CloudFormation, and more).',
-                'Implemented social authentication in Flask using OAuth2 for Google and Facebook, enabling users to easily and securely sign in using their social media accounts.',
                 'Developed a PDF report generation system using ReportLab and Django, enabling the creation of customizable and professional reports with features such as dynamic charts and graphs, tables, and images.'
             ],
             techStack: ['Python', 'AWS', 'Django', 'Serverless', 'React']
