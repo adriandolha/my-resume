@@ -52,7 +52,7 @@ function DownloadPDF({ resumeRef }) {
                     <a href={process.env.PUBLIC_URL + "AdrianDolha_2022_10.pdf"} >Download PDF</a>
                 </Button> */}
                 <Button variant='contained' color='primary'
-                    component={Link} href={process.env.PUBLIC_URL + "AdrianDolha_2023_12.pdf"}
+                    component={Link} href={process.env.PUBLIC_URL + "AdrianDolha_2024_11.pdf"}
                     className={classes.downloadButton}>
                     Download PDF
                 </Button>
